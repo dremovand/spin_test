@@ -4,7 +4,7 @@ class CoreController {
     const splittedArray = this.splitArr(spinResult.matrix, 3);
     const state = this.isWin(splittedArray);
     console.log(
-      `You ${state ? "won" : "lose"}!\nYour slots was:\n${splittedArray.join(
+      `You ${state>=2 ? "won" : "lose"}!\nYour slots was:\n${splittedArray.join(
         "\n"
       )}`
     );
